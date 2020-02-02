@@ -151,7 +151,7 @@ public class OutdoorModeController extends LiveDisplayFeature {
                 if (mode == MODE_DAY) {
                     // always turn it on if day mode is selected
                     sensorEnabled = true;
-                } else if (mode == MODE_AUTO && !isNight()) {
+                } else if (mode == MODE_AUTO) {
                     // in auto mode we turn it on during actual daytime
                     sensorEnabled = true;
                 }
